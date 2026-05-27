@@ -1,4 +1,4 @@
-# 🧠 Multimodal RAG System
+#  Multimodal RAG System
 
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
@@ -11,21 +11,21 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 Traditional RAG systems are limited to text. This system extends the paradigm to support **multiple modalities**:
 
 | Modality | Handling |
 |---|---|
-| 📄 PDF | Per-page text extraction via PyPDF2 |
-| 📝 Text / Markdown | Paragraph-level chunking |
-| 🖼️ Images | Automatic captioning via BLIP (Salesforce) |
+|  PDF | Per-page text extraction via PyPDF2 |
+|  Text / Markdown | Paragraph-level chunking |
+|  Images | Automatic captioning via BLIP (Salesforce) |
 
 All modalities are embedded into the **same vector space** using `sentence-transformers`, indexed with **FAISS** for sub-millisecond retrieval, and answered using your choice of LLM backend.
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -54,19 +54,19 @@ All modalities are embedded into the **same vector space** using `sentence-trans
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🔀 **Multimodal ingestion** — PDFs, text, and images in one pipeline
-- 🔍 **Dense retrieval** — FAISS with cosine similarity, sub-10ms search
-- 🤖 **Flexible generation** — OpenAI, local HuggingFace model, or no-dependency extractive
-- 📊 **Built-in evaluation** — Faithfulness, Answer Relevance, Context Precision, MRR
-- 💾 **Persistent index** — save/load vector stores to disk
-- 🖥️ **Streamlit UI** — clean interactive demo app
-- 🧪 **Jupyter notebook** — step-by-step walkthrough
+-  **Multimodal ingestion** — PDFs, text, and images in one pipeline
+-  **Dense retrieval** — FAISS with cosine similarity, sub-10ms search
+-  **Flexible generation** — OpenAI, local HuggingFace model, or no-dependency extractive
+-  **Built-in evaluation** — Faithfulness, Answer Relevance, Context Precision, MRR
+-  **Persistent index** — save/load vector stores to disk
+-  **Streamlit UI** — clean interactive demo app
+-  **Jupyter notebook** — step-by-step walkthrough
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```bash
 # 1. Clone the repo
@@ -105,7 +105,7 @@ for source in response.sources:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 multimodal-rag/
@@ -125,7 +125,7 @@ multimodal-rag/
 
 ---
 
-## 📊 Evaluation Metrics
+##  Evaluation Metrics
 
 | Metric | Description |
 |---|---|
@@ -150,7 +150,7 @@ evaluator.print_report(report)
 
 ---
 
-## ⚙️ LLM Backends
+##  LLM Backends
 
 | Backend | Setup | Quality |
 |---|---|---|
@@ -160,7 +160,7 @@ evaluator.print_report(report)
 
 ---
 
-## 🔧 Configuration
+##  Configuration
 
 | Parameter | Default | Description |
 |---|---|---|
@@ -172,7 +172,7 @@ evaluator.print_report(report)
 
 ---
 
-## 📚 References
+##  References
 
 - [Lewis et al. (2020) — Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401)
 - [Salesforce BLIP — Bootstrapping Language-Image Pre-training](https://arxiv.org/abs/2201.12086)
@@ -188,7 +188,3 @@ evaluator.print_report(report)
 - LinkedIn: [noor-alam-0a7122209](https://linkedin.com/in/noor-alam-0a7122209)
 
 ---
-
-## 📄 License
-
-MIT License — free to use, modify, and distribute.
